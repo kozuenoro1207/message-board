@@ -20,8 +20,8 @@ class MessagesController < ApplicationController
     @message=Message.find(params[:id])
   end
   def index
-    @messages = Message.all
     @message = Message.new
+    @messages = Message.all
   end
   
   def create
